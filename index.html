@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />    
+    <meta name="description" content="" />
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/head_logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/head_logo.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    
+    <!-- PAGE TITLE HERE -->
+    <title>Siva Vel Trends | Home</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+   
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+    <!-- Lc light box popup -->
+    <link rel="stylesheet" href="css/lc_lightbox.css" />     
+    <!-- Price Range Slider -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css" />
+
+
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="css/skin-9.css">
+
+    
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+
+    <style>
+.marquee-box {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 70%;
+  background: #fff;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -2px 4px 20px rgba(0,0,0,0.15);
+  padding: 12px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.process-title {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+.scroll-content {
+  display: inline-block;
+  animation: scrollX 30s linear infinite;
+  font-size: 16px;
+  color: #333;
+}
+.marquee-box:hover .scroll-content {
+  animation-play-state: paused;
+}
+@keyframes scrollX {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.process {
+  padding: 0 12px;
+  font-weight: 500;
+  color: #1a73e8;
+  cursor: pointer;
+  position: relative;
+}
+.process:hover {
+  color: #d93025;
+}
+
+/* 💬 Fancy Popup in center */
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  border: 3px solid #1a73e8;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  max-width: 90%;
+  width: 400px;
+  display: none;
+  animation: fadeInUp 0.3s ease forwards;
+}
+.popup-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1a73e8;
+}
+.popup-box p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .marquee-box {
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .popup-box {
+    width: 90%;
+    padding: 16px;
+  }
+  .popup-box h3 {
+    font-size: 18px;
+  }
+  .popup-box p {
+    font-size: 14px;
+  }
+}
+
+.client-btn {
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: left center;
+  background: linear-gradient(to right, #0052d4, #6fb1fc);
+  color: white;
+  font-weight: 600;
+  padding: 10px 24px;
+  font-size: 15px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.client-btn:hover {
+  background: linear-gradient(to right, #203a43, #2c5364);
+}
+
+/* 🌟 Popup Box */
+.client-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  z-index: 10001;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease;
+  overflow: hidden;
+}
+.popup-header {
+  background: linear-gradient(to right, #1a73e8, #3f8efc);
+  color: #fff;
+  padding: 18px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-body {
+  padding: 20px 24px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  font-size: 15px;
+}
+.popup-body p {
+  margin: 14px 0;
+}
+.popup-body i {
+  color: #1a73e8;
+  margin-right: 8px;
+}
+
+/* ❌ Close Button */
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+.close-btn:hover {
+  color: #ffdede;
+}
+
+/* ✨ Animation */
+@keyframes zoomIn {
+  from { transform: translate(-50%, -60%) scale(0.9); opacity: 0; }
+  to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .popup-header { font-size: 18px; padding: 16px; }
+  .popup-body { font-size: 14px; padding: 18px; }
+}
+</style>
+    
+
+</head>
+
+<body>
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <div class="cssload-spinner">
+            <div class="cssload-ball cssload-ball-1"></div>
+            <div class="cssload-ball cssload-ball-2"></div>
+            <div class="cssload-ball cssload-ball-3"></div>
+            <div class="cssload-ball cssload-ball-4"></div>
+        </div>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+	<div class="page-wraper">
+     
+        <!-- HEADER START -->
+        <header class="site-header header-style-2 mobile-sider-drawer-menu">
+            <div class="header-style-2-content">
+                <div class="top-bar site-bg-gray-light">
+                    <div class="container">
+    
+                            <div class="d-flex justify-content-between">
+                                <div class="wt-topbar-left d-flex flex-wrap align-content-start">
+                                    <ul class="wt-topbar-left-info">
+                                        <li>60+ Years of Textile Expertise</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="wt-topbar-right d-flex flex-wrap align-content-center">
+                                    <div class="wt-topbar-right-info">
+                                        <ul class="social-icons">
+                                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                            <li><a href="javascript:void(0);" class="fa fa-pinterest"></a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                           
+    
+                    </div>
+                </div>
+                
+                 <div class="header-middle-wraper">     
+                    <div class="container">
+                        <div class="header-middle d-flex justify-content-between align-items-center">
+                            <div class="logo-header">
+                                <div class="logo-header-inner logo-header-one">
+                                    <a href="index.html">
+                                    <img src="images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="header-info-wraper">
+                                
+                                <div class="header-info">
+                                    <ul>
+                                        <li>
+                                            <div class="wt-icon-box-wraper  left">
+                                                <div class="wt-icon-box-xs site-bg-primary radius">
+                                                    <span class="icon-cell site-text-white"><i class="flaticon-location"></i></span>
+                                                </div>
+                                                <div class="icon-content">
+                                                    <p>Address</p>
+                                                    <h5 class="wt-tilte">Veerapandi Tirupur- 641605</h5>
+                                                </div>
+                                            </div>
+                                        </li> 
+
+                                        <li>
+                                            <div class="wt-icon-box-wraper  left">
+                                                <div class="wt-icon-box-xs site-bg-primary radius">
+                                                    <span class="icon-cell site-text-white"><i class="flaticon-mail"></i></span>
+                                                </div>
+                                                <div class="icon-content">
+                                                    <p>Send Us Email</p>
+                                                    <h5 class="wt-tilte">marketing@sivaveltrends.com</h5>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        
+                                        <li>
+                                            <div class="wt-icon-box-wraper left">
+                                                <div class="wt-icon-box-xs site-bg-primary radius">
+                                                    <span class="icon-cell site-text-white"><i class="flaticon-phone-call"></i></span>
+                                                </div>
+                                                <div class="icon-content">
+                                                    <p>Get Quick Support</p>
+                                                    <h5 class="wt-tilte">0421 - 221 6666</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <div class="header-bottom"> 
+                    <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+                    
+                        <div class="main-bar header-bottom">
+                            <div class="container-block clearfix">
+
+                                <div class="navigation-bar">
+                                    <!-- NAV Toggle Button -->
+                                    <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar icon-bar-first"></span>
+                                        <span class="icon-bar icon-bar-two"></span>
+                                        <span class="icon-bar icon-bar-three"></span>
+                                    </button> 
+            
+                                    <!-- MAIN Vav -->
+                                    <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-between">
+                                
+                                        <ul class=" nav navbar-nav">
+                                            <li class="has-child"><a href="index.html">Home</a></li>
+
+
+                                            <li class="has-child">
+                                                <a href="about.html">About</a>                         
+                                            </li>
+
+                                            <li class="has-child"><a href="service.html">Services</a>                                                               
+                                            </li>
+
+                                            <li class="has-child">
+                                                <a href="Certification.html">Certifications</a>                         
+                                            </li>
+                                        </ul>
+            
+                                    </div>
+                                    
+                                    <!-- Header Right Section-->
+   <div class="extra-nav header-1-nav">
+    <div class="extra-cell two d-flex gap-2">
+        <!-- Contact Us Button -->
+        <a href="contact_us.html" class="site-button-secondry" title="Request a Quote">
+            <span class="link-inner">
+                <i class="fa fa-envelope"></i> Contact Us
+            </span>
+        </a>
+    </div>
+</div>
+
+
+
+                                </div>
+                                
+                            </div>   
+                        </div>
+
+
+                        <!-- SITE Search -->
+                        <div id="search"> 
+                            <span class="close"></span>
+                            <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                                <div class="input-group">
+                                    <input class="form-control" value="" name="q" type="search" placeholder="Type to search"/>
+                                    <span class="input-group-append"><button type="button" class="search-btn"><i class="fa fa-paper-plane"></i></button></span>
+                                </div> 
+                            </form>
+                        </div> 
+                
+                    </div>
+                </div>
+            </div>                
+            
+        </header>
+        <!-- HEADER END -->
+    
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- SLIDER START --> 
+            
+                
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="typewriter-effect" data-source="gallery">
+                <div id="welcome_two" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">                
+                    <ul>
+                
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-901"
+                        data-transition="slidingoverlayhorizontal" 
+                        data-slotamount="default" 
+                        data-hideafterloop="0" 
+                        data-hideslideonmobile="off"  
+                        data-easein="default" 
+                        data-easeout="default" 
+                        data-masterspeed="default"  
+                        data-thumb="images/main-slider/slider2/banner1.jpeg"  
+                        data-rotate="0"  
+                        data-saveperformance="off"  
+                        data-title="Slide" data-param1="" 
+                        data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/main-slider/slider2/banner1.jpeg"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina/>
+                            <!-- LAYERS -->
+                        
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                            id="slide-901-layer-0" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="full"
+                            data-height="full"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-basealign="slide" 
+                            data-responsive_offset="off" 
+                            data-responsive="off"
+                            data-frames='[
+                            {"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index: 1;background-color:rgba(0, 0, 0, 0.5);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                            </div>
+                        
+                            <!-- LAYER NR. 2 [ Small Title ] -->
+                            <div class="tp-caption   tp-resizeme site-text-primary" 
+                            id="slide-901-layer-2" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-180','-180','-180','-140']"   
+                            data-fontsize="['20','20','20','20']"
+                            data-lineheight="['20','20','20','20']"
+                            data-width="['700','700','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 700;
+                            font-family: 'Mulish', sans-serif;"><span style="background-color: #fff; display: inline-block;padding: 5px 10px;">60 Years of Excellence</span></div>
+                                                        
+                            <!-- LAYER NR. 3 [ Large Title ] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-901-layer-3" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-60']"  
+                            data-fontsize="['82','82','56','30']"
+                            data-lineheight="['82','82','56','38']"
+                            data-width="['900','900','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+                            
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 900;
+                            color:#fff;
+                            border-width:0px; font-family: 'Mulish', sans-serif;">We Craft best Fashion Garments</div>
+                        
+                            <!-- LAYER NR. 4 [ for paragraph] -->
+                            <div class="tp-caption  tp-resizeme" 
+                            id="slide-901-layer-4" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['80','80','50','20']"  
+                            data-fontsize="['18','20','20','14']"
+                            data-lineheight="['30','30','30','22']"
+                            data-width="['600','600','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            font-weight: 500; 
+                            color:#fff;
+                            border-width:0px;font-family: 'Mulish', sans-serif;">
+                            With decades of textile manufacturing expertise, we deliver top-quality fashion garments using innovation, ethics, and excellence.
+                            </div>
+                        
+                            <!-- LAYER NR. 5 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-901-layer-5"						
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['180','180','150','100']" 
+                            data-lineheight="['none','none','none','none']"
+                            data-width="['200','200','200','200']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index:13; text-transform:uppercase;">
+                            <a href="about-1.html" class="site-button btn-hover-animation"><i class="flaticon-right"></i>More About</a>
+                            </div>
+
+                                <!-- LAYER NR. 6 large number -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-901-layer-6"						
+                            data-x="['right','right','right','center']" data-hoffset="['40','40','40','0']" 
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','100']" 
+                            data-fontsize="['400','400','200','100']"
+                            data-lineheight="['400','400','200','100']"                             
+                            data-width="['800','800','800','800']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['right','right','right','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                        style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 900;
+                            color:rgba(0,0,0,0);">
+                            <span class="slider-text-outline" style="font-family: 'Mulish', sans-serif;text-transform:uppercase;">01</span>
+                            </div>  
+                                                    
+
+                        </li>
+
+                        <!-- SLIDE 2 -->
+                        <li data-index="rs-902"
+                        data-transition="slidingoverlayhorizontal" 
+                        data-slotamount="default" 
+                        data-hideafterloop="0" 
+                        data-hideslideonmobile="off"  
+                        data-easein="default" 
+                        data-easeout="default" 
+                        data-masterspeed="default"  
+                        data-thumb="images/main-slider/slider2/banner3.jpeg"  
+                        data-rotate="0"  
+                        data-saveperformance="off"  
+                        data-title="Slide" data-param1="" 
+                        data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/main-slider/slider2/banner3.jpeg"  alt=""  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina/>
+                            <!-- LAYERS -->
+                        
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                            id="slide-902-layer-0" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="full"
+                            data-height="full"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-basealign="slide" 
+                            data-responsive_offset="off" 
+                            data-responsive="off"
+                            data-frames='[
+                            {"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index: 1;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                            </div>
+                        
+                            <!-- LAYER NR. 2 [ Small Title ] -->
+                            <div class="tp-caption   tp-resizeme site-text-primary" 
+                            id="slide-902-layer-2" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-180','-180','-180','-140']"    
+                            data-fontsize="['20','20','20','20']"
+                            data-lineheight="['20','20','20','20']"
+                            data-width="['700','700','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 700;
+                            font-family: 'Mulish', sans-serif;"><span style="background-color: #fff; display: inline-block;padding: 5px 10px;">Sustainability First</span></div>
+                                                        
+                            <!-- LAYER NR. 3 [ Large Title ] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-902-layer-3" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-60']"  
+                            data-fontsize="['82','82','56','30']"
+                            data-lineheight="['82','82','56','38']"
+                            data-width="['900','900','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+                            
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 900;
+                            color:#fff;
+                            border-width:0px; font-family: 'Mulish', sans-serif;">Eco-Friendly Fashion, Globally Exported.</div>
+                        
+                            <!-- LAYER NR. 4 [ for paragraph] -->
+                            <div class="tp-caption  tp-resizeme" 
+                            id="slide-902-layer-4" 
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['80','80','50','20']" 
+                            data-fontsize="['18','18','20','14']"
+                            data-lineheight="['30','30','30','22']"
+                            data-width="['600','600','700','400']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            font-weight: 500; 
+                            color:#fff;
+                            border-width:0px;font-family: 'Mulish', sans-serif;">
+                            Our vision is to be a global leader in fashion garment manufacturing, using eco-conscious materials and ethical practices that positively impact the world
+                            </div>
+                        
+                            <!-- LAYER NR. 5 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-902-layer-5"						
+                            data-x="['left','left','left','center']" data-hoffset="['30','50','50','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['180','180','150','100']" 
+                            data-lineheight="['none','none','none','none']"
+                            data-width="['200','200','200','200']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index:13; text-transform:uppercase;">
+                            <a href="about-1.html" class="site-button btn-hover-animation"><i class="flaticon-right"></i>More About</a>
+                            </div>
+
+                                <!-- LAYER NR. 6 large number -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-902-layer-6"						
+                            data-x="['right','right','right','center']" data-hoffset="['40','40','40','0']" 
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','100']" 
+                            data-fontsize="['400','400','200','100']"
+                            data-lineheight="['400','400','200','100']"                               
+                            data-width="['800','800','800','800']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                                {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                                {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                                ]'
+                            data-textAlign="['right','right','right','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                                
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 900;
+                            color:rgba(0,0,0,0);">
+                            <span class="slider-text-outline" style="font-family: 'Mulish', sans-serif;text-transform:uppercase;">02</span>
+                            </div>  
+
+                                                    
+                        </li>                                
+                    
+					<!-- SLIDE 3 -->
+                        
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+                </div>
+            </div>
+                
+            
+            <!-- SLIDER END -->
+
+            <!-- ABOUT ONE SECTION START -->
+            <div class="section-full p-t120 p-b90 site-bg-light">
+            	<div class="about-section-one">
+                    <div class="container">
+                        <div class="section-content">                 
+                            <div class="row justify-content-center d-flex">
+                            
+                                <div class="col-lg-6 col-md-12 m-b30 about-max-two-position">
+                                    <div class="about-max-two">
+                                        <div class="about-max-two-media"><img src="images/SIVAVEL 5.jpg" alt=""></div>
+                                       
+                                    </div>
+                                </div> 
+
+                               <div class="col-lg-6 col-md-12 m-b30">
+                                    <div class="about-section-two-right">
+                                        <!-- TITLE START-->
+                                        <div class="section-head left wt-small-separator-outer">
+                                            <div class="wt-small-separator site-text-primary">
+                                                <div>About Us</div>
+                                            </div>
+                                            <h2>Over 60 Years of Garment Manufacturing Expertise</h2>
+                                        </div>
+                                        <!-- TITLE END-->
+
+                                        <div class="about-one">
+                                            <!-- <p>
+                                                <strong>Delivering exceptional knitted garments through innovation, sustainability, and craftsmanship.</strong>
+                                            </p>  -->
+                                            <p>Siva Vel Trends (SVT) is a globally recognized textile and garment manufacturing company with over 60 years
+                                               of experience. We are committed to delivering high-quality fashion garments through a vertically integrated setup
+                                               that spans yarn production to finished product delivery.
+                                            </p>
+                                        </div>
+                                        
+
+                                         <ul class="description-list p-b20">
+                                            <li><i class="flaticon-right"></i>Producing 300,000+ garments every month</li>
+                                            <li><i class="flaticon-right"></i>Global exports with strict quality inspections</li>
+                                            <li><i class="flaticon-right"></i>60% of our employees are women, promoting inclusive growth</li>
+                                        </ul>
+
+                                        <a href="about.html" class="site-button btn-hover-animation"><i class="flaticon-right"></i>More About</a> 
+                                   </div>
+                               </div>
+                                                      
+                           </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>   
+            <!-- ABOUT ONE SECTION END -->
+
+            <!-- INTRO SECTION START -->
+            <div class="section-full p-t120 p-b90 site-bg-white">
+                        
+                <div class="container">
+
+                    <!-- TITLE START-->
+                    <div class="wt-separator-two-part">
+                        <div class="row wt-separator-two-part-row">
+                            <div class="col-lg-6 col-md-12 wt-separator-two-part-left">
+                                <!-- TITLE START-->
+                                <div class="section-head left wt-small-separator-outer">
+                                    <div class="wt-small-separator site-text-primary">
+                                        <div>What We Do!</div>
+                                    </div>
+                                    <h2 class="wt-title">We provide complete garment manufacturing solutions.</h2>
+                                </div>
+                                <!-- TITLE END-->
+                            </div>
+                                                        
+                        </div>
+                    </div>
+                    <!-- TITLE END-->
+
+
+                    <div class="s-section">
+                        <div class="row d-flex justify-content-center">
+                       
+                            <!-- COLUMNS 1 --> 
+                            <div class="col-lg-4 col-md-6  col-sm-6 m-b30">
+                                <div class="square-flip">
+                                    <div class="square shadow-bx">
+                                        <div class="square-container">
+                                            <div class="wt-icon-box-wraper m-b30">
+                                                <div class="icon-lg inline-icon">
+                                                    <span class="icon-cell site-text-primary"><i class="fa-solid fa-spa"></i> </span>
+                                                </div>
+                                            </div>
+                                            <h4 class="wt-title"><a href="#">Yarn & Fabric Production</a></h4>
+                                            <p>We produce high-quality yarn using over 1,10,000 spindles and 12,000 rotors, followed by greige and dyed fabric production of 1,000 and 300 tonnes monthly.</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class='square2' data-image="images/SIVAVEL 5.jpg">
+                                        <div class="square-container2">
+                                            <a href="service.html" class="site-button btn-hover-animation boxshadow"><i class="flaticon-right"></i>View All</a>
+                                        </div>
+                                        <div class="flip-overlay"></div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <!-- COLUMNS 2 --> 
+                            <div class="col-lg-4 col-md-6  col-sm-6 m-b30">
+                                <div class="square-flip">
+                                    <div class="square shadow-bx">
+                                        <div class="square-container">
+                                            <div class="wt-icon-box-wraper m-b30">
+                                                <div class="icon-lg inline-icon">
+                                                    <span class="icon-cell site-text-primary"><i class="fa-solid fa-shirt"></i></span>
+                                                </div>
+                                            </div>
+                                            <h4 class="wt-title"><a href="#">Garment Manufacturing</a></h4>
+                                            <p>Our vertically integrated setup covers knitting, cutting, sewing, and packing, producing over 300,000 garments every month using precision and care.</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class='square2' data-image="images/SIVAVEL 10.jpg">
+                                        <div class="square-container2">
+                                            <a href="service.html" class="site-button btn-hover-animation boxshadow"><i class="flaticon-right"></i>View All</a>
+                                        </div>
+                                        <div class="flip-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- COLUMNS 3 --> 
+                            <div class="col-lg-4 col-md-6  col-sm-6 m-b30">
+                                <div class="square-flip">
+                                    <div class="square shadow-bx">
+                                        <div class="square-container">
+                                            <div class="wt-icon-box-wraper m-b30">
+                                                <div class="icon-lg inline-icon">
+                                                    <span class="icon-cell site-text-primary"><i class="fa-solid fa-globe"></i></span>
+                                                </div>
+                                            </div>
+                                            <h4 class="wt-title"><a href="#">Global Export & Sustainability</a></h4>
+                                            <p>We export globally with strict quality inspections and commit to eco-friendly practices using 60 MW of green energy and sustainable materials.
+                                             </p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class='square2' data-image="images/SIVAVEL 10.jpg">
+                                        <div class="square-container2">
+                                            <a href="service.html" class="site-button btn-hover-animation boxshadow"><i class="flaticon-right"></i>View All</a>
+                                        </div>
+                                        <div class="flip-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            
+
+                            
+                        </div>
+                    </div>                  
+                </div>
+
+            </div>   
+            <!-- INTRO SECTION END -->  
+
+            <!-- SERVICES SECTION START -->
+            <div class="section-full p-t120 p-b90 site-bg-gray-light  service-gallery-style1-wrapper">
+                    <div class="services-gallery-block-outer">
+                        <div class="container">
+                            <!-- TITLE START-->
+                            <div class="section-head center wt-small-separator-outer">
+                                <div class="wt-small-separator site-text-primary">
+                                    <div>Service Gallery</div>
+                                </div>
+                                <h2>We deliver excellence across entire garment</h2>
+                            </div>
+                            <!-- TITLE END--> 
+                        </div>
+                        <div class="container-fluid">
+                            <div class="section-content"> 
+                                <div class="services-gallery-style2 m-b30">
+                                    <div class="owl-carousel services-gallery-two owl-btn-vertical-center ">
+                                    
+                                        <!-- COLUMNS 1 --> 
+                                        <div class="item ">
+                                            <div class="service-box-style2">
+
+                                                <div class="service-media">
+                                                    <img src="images/SIVAVEL 7.jpg" alt="">
+                                                </div>
+                                                
+                                                <div class="service-content">
+                                                    <div class="service-media-hvr" style="background-image:url(images/bg_gallery.jpg);"></div>
+                                                    <div class="service-content-data">
+                                                        <h3 class="service-title-large"><a href="service-detail.html">Yarn Spinning</a></h3>
+                                                        <p>We produce high-quality ring-spun and open-end yarn using 1,10,000 spindles and 12,000 rotors.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-content2">
+                                                    <h4 class="service-title-large2"><a href="service-detail.html">Yarn Spinning</a></h4>
+                                                   
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- COLUMNS 2 --> 
+                                        <div class="item ">
+                                            <div class="service-box-style2">
+
+                                                <div class="service-media">
+                                                    <img src="images/SIVAVEL 8.jpg" alt="">
+                                                </div>
+
+                                                <div class="service-content">
+                                                    <div class="service-media-hvr" style="background-image:url(images/bg_gallery.jpg);"></div>
+                                                    <div class="service-content-data">
+                                                        <h3 class="service-title-large"><a href="service-detail.html">Fabric Knitting</a></h3>
+                                                        <p>Our knitting machines create soft, durable, and versatile fabrics for diverse garment needs.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-content2">
+                                                    <h4 class="service-title-large2"><a href="service-detail.html">Fabric Knitting</a></h4>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- COLUMNS 3 --> 
+                                        <div class="item ">
+                                            <div class="service-box-style2">
+                                                <div class="service-media">
+                                                    <img src="images/SIVAVEL 11.jpg" alt="">
+                                                </div>
+
+                                                <div class="service-content">
+                                                    <div class="service-media-hvr" style="background-image:url(images/bg_gallery.jpg);"></div>
+                                                    <div class="service-content-data">
+                                                        <h3 class="service-title-large"><a href="service-detail.html">Fabric Dyeing & Processing</a></h3>
+                                                        <p>Eco-friendly soft-flow dyeing of up to 12 tonnes per day using sustainable practices.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-content2">
+                                                    <h4 class="service-title-large2"><a href="service-detail.html">Fabric Dyeing & Processing</a></h4>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- COLUMNS 4 --> 
+                                        <div class="item ">
+                                            <div class="service-box-style2">
+                                                <div class="service-media">
+                                                    <img src="images/SIVAVEL 13.jpg" alt="">
+                                                </div>
+
+                                                <div class="service-content">
+                                                    <div class="service-media-hvr" style="background-image:url(images/bg_gallery.jpg);"></div>
+                                                    <div class="service-content-data">
+                                                        <h3 class="service-title-large"><a href="service-detail.html">Cutting & Sewing</a></h3>
+                                                        <p>Automated cutting and advanced Juki sewing ensure precision and consistency in every stitch.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="service-content2">
+                                                    <h4 class="service-title-large2"><a href="service-detail.html">Cutting & Sewing</a></h4>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- COLUMNS 5 --> 
+                                        <div class="item ">
+                                            <div class="service-box-style2">
+                                                <div class="service-media">
+                                                    <img src="images/SIVAVEL 10.jpg" alt="">
+                                                </div>
+
+                                                <div class="service-content">
+                                                    <div class="service-media-hvr" style="background-image:url(images/bg_gallery.jpg);"></div>
+                                                    <div class="service-content-data">
+                                                        <h3 class="service-title-large"><a href="service-detail.html">Packing & Global Shipping</a></h3>
+                                                        <p>Carefully packed and delivered with rigorous internal and external quality checks to clients worldwide.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-content2">
+                                                    <h4 class="service-title-large2"><a href="service-detail.html">Packing & Global Shipping</a></h4>
+                                                </div>
+
+                                            </div>
+                                        </div>                                            
+
+                                                    
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                        
+                    </div>
+            </div>
+            <!-- SERVICES SECTION END -->
+
+             
+            
+            <!-- OUR TEAM START -->
+           <div class="section-full p-t120 p-b90 site-bg-white">
+    
+                <div class="container">
+                    <!-- TITLE START-->
+                    <div class="wt-separator-two-part">
+                        <div class="row wt-separator-two-part-row">
+                            <div class="col-lg-6 col-md-12 wt-separator-two-part-left">
+                                <div class="section-head left wt-small-separator-outer">
+                                    <div class="wt-small-separator site-text-primary">
+                                        <div>Our Certifications</div>
+                                    </div>
+                                    <h2 class="wt-title">Global Standards That Define Our Quality</h2>
+                                </div>
+                           </div>
+                           <div class="col-lg-6 col-md-12 wt-separator-two-part-right">
+                                <p class="p_discription">Siva Vel Trends is proud to be recognized for ethical practices,
+                                  environmental responsibility, and high-quality standards. Our globally accredited certifications reflect 
+                                  our commitment to delivering trusted, sustainable textile solutions.</p>
+                             </div>
+                                                        
+                        </div>
+                    </div>
+                    <!-- TITLE END-->
+
+                    <div class="section-content">
+
+                        <div class="team-carousel-wraper m-b30">
+                            <div class="owl-carousel team-carousel owl-btn-bottom-left">
+
+                                <div class="item">
+                                    <div class="team-effect-hvr1">
+                                      <img src="images/certificate_5.png" alt="" style="width:100%; height:200px; object-fit:contain; background-color:#fff;" >
+                                      <div class="content-info">
+                                          <div class="content-info-inner">
+                                        <div class="info-detail">
+                                            <h4 class="wt-title">GOTS Certified</h4>
+                                            <p class="wt-title-position">Global Organic Textile Standard</p>
+                                        </div>
+                                       
+                                        <p class="description">We comply with the most stringent standards in organic textile processing, ensuring eco-friendly production from raw material to finished garment.</p>
+                                    </div>
+                                      </div>     
+                                    </div>
+                                </div>
+                                    
+
+                                <div class="item">
+
+                                    <div class="team-effect-hvr1">
+                                        <img src="images/certificate_2.png" alt="" style="width:100%; height:200px; object-fit:contain; background-color:#fff;" >
+                                        <div class="content-info">
+                                            <div class="content-info-inner">
+                                          <div class="info-detail">
+                                            <h4 class="wt-title">OEKO-TEX® Standard 100</h4>
+                                            <p class="wt-title-position">Tested for Harmful Substances</p>
+                                          </div>
+                                          <p class="description">All our garments are rigorously tested to ensure they are free from harmful chemicals and safe for end users.</p>
+                                          </div>
+                                      </div>     
+                                    </div>                                    
+
+                                </div>
+                        
+                                <div class="item">
+
+                                    <div class="team-effect-hvr1">
+                                        <img src="images/certificate_4.png" alt="" style="width:100%; height:200px; object-fit:contain; background-color:#fff;" >
+                                        <div class="content-info">
+                                            <div class="content-info-inner">
+                                          <div class="info-detail">
+                                            <h4 class="wt-title">SA 8000 Certified</h4>
+                                            <p class="wt-title-position">Social Accountability Certification</p>
+                                          </div>
+                                          <p class="description">We uphold ethical labor practices, promoting fair wages, safe workplaces, and workers' rights across all facilities.</p>
+                                          </div>
+                                      </div>     
+                                    </div>                                    
+
+                                </div>
+
+                                <div class="item">
+
+                                    <div class="team-effect-hvr1">
+                                        <img src="images/certificate_6.png" alt="" style="width:100%; height:200px; object-fit:contain; background-color:#fff;" >
+                                        <div class="content-info">
+                                            <div class="content-info-inner">
+                                          <div class="info-detail">
+                                            <h4 class="wt-title"> ISO 14001:2015</h4>
+                                            <p class="wt-title-position">Environmental Management System</p>
+                                          </div>
+                                          <p class="description">Our operations follow a certified environmental management system focused on reducing our ecological footprint.</p>
+                                          </div>
+                                      </div>     
+                                    </div>                                     
+
+                                </div>
+
+                            </div>
+                        </div>
+    
+                    </div>    
+                </div>
+            
+            </div>    
+            <!-- OUR TEAM SECTION END -->
+
+
+            
+            <!-- SOME FACTS SECTION START -->
+            <div class="section-full bg-cover p-t120 p-b90">
+                <div class="container">
+
+                    <!-- TITLE START-->
+                    <div class="section-head center wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                           <div>Some Facts</div>                                
+                        </div>
+                        <h2 class="wt-title">Powering fashion for global brands with scale and sustainability</h2>
+                    </div>
+                    <!-- TITLE END-->
+
+
+                    <div class="section-content">
+
+                        <div class="row justify-content-center d-flex counter-outer-one-wrap">
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-b30">
+                                <div class="wt-icon-box-wraper left counter-outer-one">
+                                    <span class="icon-xl site-text-black">
+                                        <i class="flaticon-growth"></i>
+                                    </span>
+                                    <div class="icon-content">
+                                        <div class="m-b5"><span class="counter">60</span></div>
+                                        <div class="icon-content-info">Years of Expertise</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-b30">
+                                <div class="wt-icon-box-wraper left counter-outer-one">
+                                    <span class="icon-xl site-text-black">
+                                        <i class="flaticon-engineer"></i>
+                                    </span>
+                                    <div class="icon-content">
+                                        <div class="m-b5"><span class="counter">4500</span>+</div>
+                                        <div class="icon-content-info">Skilled Employees</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-b30">
+                                <div class="wt-icon-box-wraper left counter-outer-one">
+                                    <span class="icon-xl site-text-black">
+                                        <i class="flaticon-interview"></i>
+                                    </span>
+                                    <div class="icon-content">
+                                        <div class="m-b5"><span class="counter">300000</span>+</div>
+                                        <div class="icon-content-info">Garments Every Month</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-3 col-sm-6 m-b30">
+                                <div class="wt-icon-box-wraper left counter-outer-one">
+                                    <span class="icon-xl site-text-black">
+                                        <i class="flaticon-briefing"></i>
+                                    </span>
+                                    <div class="icon-content">
+                                        <div class="m-b5"><span class="counter">60</span>MW</div>
+                                        <div class="icon-content-info">Green Energy Used</div>
+                                    </div>
+                                </div>
+                            </div>                                            
+                        </div>
+
+                    </div>
+                </div>
+   
+            </div>    
+            <!-- SOME FACTS SECTION End -->  
+           
+       
+
+            <!-- WHY CHOOSE US SECTION START -->
+            <div class="section-full bg-cover p-t120 p-b90 overlay-wraper" style="background-image:url(images/main-slider/slider2/banner.jpg);">
+                <div class="overlay-main site-bg-white opacity-01"></div>
+                <div class="container">
+
+                            <!-- TITLE START-->
+                            <div class="section-head center wt-small-separator-outer">
+                                <div class="wt-small-separator site-text-primary">
+                                    <div>Get in Touch</div>
+                                </div>
+                                <h2 class="wt-title" style="color: #fff;">We’re here to support your manufacturing and export needs.</h2>
+                            </div>
+                            <!-- TITLE END-->
+
+
+                            <div class="section-content">
+                                <div class="help-blocks">
+                                    <div class="row justify-content-center">
+            
+                                        <!--Block 1-->
+                                        <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                                            <div class="number-block-content shadow-bx site-bg-white p-a20">
+                                                <div class="number-block-count">
+                                                    <span class="hide-line-block">01</span>
+                                                    <strong><img src="images/location.png" alt=""></strong>
+                                                </div>
+                                                <div class="number-block-info">
+                                                    <h4 class="wt-tilte">Our Address</h4>
+                                                    <p>10/528, 64 Ganapathipalayam Road,Veerapandi Post, Tirupur – 641605,Tamil Nadu, India.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <!--Block 2-->
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="number-block-content shadow-bx site-bg-white p-a20">
+                                                <div class="number-block-count">
+                                                    <span class="hide-line-block">02</span>
+                                                    <strong><img src="images/telephone.png" alt=""></strong>
+                                                </div>
+                                                <div class="number-block-info">
+                                                    <h4 class="wt-tilte">Call Us</h4>
+                                                    <p>0421 - 221 6666 / 221 7777 <br><br> <b>Mon–Sat, 9:00 AM to 6:00 PM</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Block 3-->
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="number-block-content shadow-bx site-bg-white p-a20">
+                                                <div class="number-block-count">
+                                                    <span class="hide-line-block">03</span>
+                                                    <strong><img src="images/mail.png" alt=""></strong>
+                                                </div>
+                                                <div class="number-block-info">
+                                                    <h4 class="wt-tilte">Email Us</h4>
+                                                    <p>marketing@sivaveltrends.com <br><br> <b>We respond within 24 hours.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Block 4-->
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="number-block-content shadow-bx site-bg-white p-a20">
+                                                <div class="number-block-count">
+                                                    <span class="hide-line-block">04</span>
+                                                    <strong><img src="images/note.png" alt=""></strong>
+                                                </div>
+                                                <div class="number-block-info">
+                                                    <h4 class="wt-tilte">Export Inquiries</h4>
+                                                    <p>Reach out to discuss custom manufacturing or private labeling.</p>
+                                                </div>
+                                            </div>
+                                        </div>                                 
+            
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <!-- WHY CHOOSE US SECTION End --> 
+
+                                
+
+
+        </div>
+        <!-- CONTENT END -->
+
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-dark" >
+
+            <!-- FOOTER BLOCKES START -->  
+            <div class="footer-top bg-cover" style="background-image:url(images/background/footer-b.jpg);">
+                                                                             
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+							
+                            <div class="widget widget_about">
+                                <div class="logo-footer clearfix">
+                                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                                </div>
+                                <p>Siva Vel Trends (SVT) is a vertically integrated garment manufacturer with over 60 years of expertise.
+                                 We specialize in sustainable textile solutions</p>
+                                
+
+                            </div>                            
+                            
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">  
+                            <div class="widget n-letter">
+                               <h3 class="widget-title">Follow Us</h3>
+                               <div class="n-letter-content">
+                                    <p>Stay connected with us for the latest updates, innovations, and behind-the-scenes from our manufacturing units.</p>
+                                                               
+                               </div> 
+                               <ul class="social-icons">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-pinterest"></a></li>
+                            </ul>
+                            </div>
+                        </div>                                                
+                    
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget">
+                                <h3 class="widget-title">Contact Us</h3>
+                                <p>Reach out to our team for manufacturing inquiries, custom orders, or export support.</p>                            
+                                <ul class="widget_address"> 
+                                    <li><i class="flaticon-mail"></i>marketing@sivaveltrends.com</li>
+                                    
+                                </ul>  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget widget_services">
+                                <h3 class="widget-title">Company Links</h3>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="Certification.html">Certification</a></li>
+                                    <li><a href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+                                
+            <div class="footer-bottom">
+                <div class="container">
+                	<div class="footer-bottom-info">
+
+                        <div class="footer-copy-right">
+                           <p>© <script>document.write(new Date().getFullYear());</script> Siva Vel Trends. All rights reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>   
+            </div>   
+    
+        </footer>
+        <!-- FOOTER END -->
+
+        <!-- BUTTON TOP START -->
+		<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+ 	</div>
+
+
+   <!-- ✅ Bottom Right Marquee with Center Popup -->
+<div class="marquee-box">
+  <div class="process-title">Process</div>
+  <div class="scroll-container">
+    <div class="scroll-content">
+      <span class="process" data-title="Yarn Sourcing" data-desc="We source high-quality yarn from trusted global suppliers, ensuring consistency and eco-conscious standards.">Yarn Sourcing</span> →
+      <span class="process" data-title="Spinning" data-desc="Fibers are converted into fine yarn through advanced spinning machinery for superior strength and uniformity.">Spinning</span> →
+      <span class="process" data-title="Knitting" data-desc="Yarn is transformed into fabric using circular or flat knitting machines with precision and care.">Knitting</span> →
+      <span class="process" data-title="Dyeing" data-desc="We use eco-friendly dyes and techniques to ensure colorfast, vibrant fabrics with minimal environmental impact.">Dyeing</span> →
+      <span class="process" data-title="Compacting" data-desc="A compacting process ensures dimensional stability and shrinkage control before garment processing.">Compacting</span> →
+      <span class="process" data-title="Cutting" data-desc="Automated cutting ensures accurate sizing and optimized fabric usage for maximum efficiency.">Cutting</span> →
+      <span class="process" data-title="Stitching" data-desc="Highly skilled tailors stitch garments using advanced sewing techniques to ensure durability.">Stitching</span> →
+      <span class="process" data-title="Checking" data-desc="Each piece undergoes thorough quality checks to meet international standards and client expectations.">Checking</span> →
+      <span class="process" data-title="Ironing" data-desc="Steam ironing enhances finish and appearance before packing and delivery.">Ironing</span> →
+      <span class="process" data-title="Packing" data-desc="Every item is neatly folded, labeled, and packed with care.">Packing</span> →
+      <span class="process" data-title="Delivery" data-desc="Products are dispatched promptly with tracking and safe packaging to client destinations.">Delivery</span>
+    </div>
+  </div>
+</div>
+
+<!-- 🧠 Fancy Center Popup -->
+<div class="popup-box" id="popup">
+  <h3 id="popup-title">Title</h3>
+  <p id="popup-desc">Description here...</p>
+</div>
+
+<!-- ✅ CSS -->
+
+
+<!-- ✅ JavaScript to Show Popup -->
+<script>
+const steps = document.querySelectorAll('.process');
+const popup = document.getElementById('popup');
+const title = document.getElementById('popup-title');
+const desc = document.getElementById('popup-desc');
+
+steps.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    title.innerText = el.getAttribute('data-title');
+    desc.innerText = el.getAttribute('data-desc');
+    popup.style.display = 'block';
+  });
+  el.addEventListener('mouseleave', () => {
+    popup.style.display = 'none';
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+<!-- 🌟 Client Info Button -->
+<div class="client-btn" onclick="toggleClientPopup()">Contact Info</div>
+
+<!-- 🌟 Client Info Popup -->
+<div class="client-popup" id="clientPopup">
+  <div class="client-popup-content">
+    <div class="popup-header">
+      <span>🤝 Client Support</span>
+      <span class="close-btn" onclick="toggleClientPopup()">&times;</span>
+    </div>
+    <div class="popup-body">
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div class="info-text">
+          <h4>Address</h4>
+          <p>No.7, Anbu Street,<br>Gandhi Nagar, Tirupur, TN - 641603</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa fa-phone-alt"></i></div>
+        <div class="info-text">
+          <h4>Phone</h4>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa fa-envelope"></i></div>
+        <div class="info-text">
+          <h4>Email</h4>
+          <p>info@svttextiles.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 💅 CSS -->
+<style>
+/* Left Side Rotated Button */
+.client-btn {
+  position: fixed;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: left center;
+  background: linear-gradient(to right, #0052d4, #6fb1fc);
+  color: white;
+  font-weight: 600;
+  padding: 10px 26px;
+  font-size: 15px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.client-btn:hover {
+  background: linear-gradient(to right, #203a43, #2c5364);
+}
+
+/* Popup Wrapper */
+.client-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  z-index: 10001;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease;
+  overflow: hidden;
+}
+
+/* Popup Header */
+.popup-header {
+  background: linear-gradient(to right, #1a73e8, #3f8efc);
+  color: #fff;
+  padding: 18px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Popup Body with Icon Boxes */
+.popup-body {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.info-icon {
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.info-text h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a73e8;
+}
+.info-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Close Button */
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+.close-btn:hover {
+  color: #ffdede;
+}
+
+/* Animation */
+@keyframes zoomIn {
+  from { transform: translate(-50%, -60%) scale(0.9); opacity: 0; }
+  to   { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .popup-header { font-size: 18px; padding: 16px; }
+  .popup-body { font-size: 14px; padding: 18px; gap: 16px; }
+  .info-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
+</style>
+
+<!-- ✅ JS to Toggle Popup -->
+<script>
+function toggleClientPopup() {
+  const popup = document.getElementById("clientPopup");
+  popup.style.display = (popup.style.display === "block") ? "none" : "block";
+}
+</script>
+
+
+
+
+
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script  src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+<script  src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+<script  src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+
+<script  src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+<script  src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+<script  src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script  src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+<script  src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+<script  src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+<script  src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+<script  src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+<script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/lc_lightbox.lite.js" ></script><!-- IMAGE POPUP -->
+<script  src="js/bootstrap-slider.min.js"></script><!-- Form js -->
+<script  src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
+
+
+
+<!-- REVOLUTION JS FILES -->
+
+<script  src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script  src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script  src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script  src="js/rev-script-1.js"></script>
+
+<!-- Elfsight Popup | Popup -->
+
+
+
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+<style>
+  #lottieOverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  #lottieOverlay.visible {
+    opacity: 1;
+  }
+
+  dotlottie-player {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+
+<div id="lottieOverlay">
+  <dotlottie-player 
+    src="https://lottie.host/8cc0ca72-19f3-4246-93c7-3bc99c0a0026/IEAOtEcylJ.lottie" 
+    background="transparent" 
+    speed="1" 
+    loop 
+    autoplay>
+  </dotlottie-player>
+</div>
+
+<script>
+  let triggered = false;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.scrollHeight;
+
+    const scrollPercent = (scrollY + windowHeight) / documentHeight * 100;
+
+    if (scrollPercent >= 80 && !triggered) {
+      triggered = true;
+
+      const overlay = document.getElementById('lottieOverlay');
+      overlay.classList.add('visible');
+
+      setTimeout(() => {
+        overlay.classList.remove('visible');
+      }, 1000);
+    }
+  });
+</script>
+
+
+
+<!-- Second Lottie animation for 80% scroll -->
+<div id="lottieOverlay2">
+  <dotlottie-player 
+    src="https://lottie.host/128a70e7-f7b1-4805-b10a-7629dcbe019a/AS9NYmIfPG.lottie" 
+    background="transparent" 
+    speed="1" 
+    loop 
+    autoplay>
+  </dotlottie-player>
+</div>
+
+<style>
+  #lottieOverlay2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  #lottieOverlay2.visible {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  let secondShown = false;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const winH = window.innerHeight;
+    const docH = document.documentElement.scrollHeight;
+    const percent = ((scrollY + winH) / docH) * 100;
+
+    if (percent >= 30 && !secondShown) {
+      secondShown = true;
+      const overlay2 = document.getElementById('lottieOverlay2');
+      overlay2.classList.add('visible');
+      setTimeout(() => {
+        overlay2.classList.remove('visible');
+      }, 3000);
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>
