@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Controlled Car Jump Game</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: skyblue;
+    }
+    #gameArea {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #70c5ce;
+      overflow: hidden;
+    }
+    #car {
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      width: 50px;
+      height: 30px;
+      background: red;
+    }
+    .tree {
+      position: absolute;
+      bottom: 50px;
+      width: 30px;
+      height: 60px;
+      background: green;
+    }
+    #startBtn, #jumpBtn {
+      position: absolute;
+      top: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+    #startBtn { left: 20px; }
+    #jumpBtn { left: 160px; }
+    #score {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameArea">
+    <button id="startBtn">Start Game</button>
+    <button id="jumpBtn" style="display:none;">Jump</button>
+    <div id="car"></div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <script>
+    const car = document.getElementById('car');
+    const gameArea = document.getElementById('gameArea');
+    const startBtn = document.getElementById('startBtn');
+    const jumpBtn = document.getElementById('jumpBtn');
+    const scoreBoard = document.getElementById('score');
+
+    let isJumping = false;
+    let gameRunning = false;
+    let score = 0;
+
+    startBtn.addEventListener('click', startGame);
+    jumpBtn.addEventListener('click', jump);
+
+    function startGame() {
+      gameRunning = true;
+      startBtn.style.display = 'none';
+      jumpBtn.style.display = 'inline-block'; // Show jump button too
+      score = 0;
+      scoreBoard.textContent = 'Score: 0';
+      generateTree();
+      listenVoice();
+    }
+
+    function generateTree() {
+      if (!gameRunning) return;
+      const tree = document.createElement('div');
+      tree.classList.add('tree');
+      tree.style.left = '100%';
+      gameArea.appendChild(tree);
+
+      let treePosition = gameArea.clientWidth;
+
+      const treeInterval = setInterval(() => {
+        if (!gameRunning) {
+          clearInterval(treeInterval);
+          tree.remove();
+          return;
+        }
+
+        treePosition -= 5;
+        tree.style.left = treePosition + 'px';
+
+        // Collision detection
+        const carRect = car.getBoundingClientRect();
+        const treeRect = tree.getBoundingClientRect();
+
+        if (
+          treeRect.left < carRect.right &&
+          treeRect.right > carRect.left &&
+          treeRect.bottom > carRect.top &&
+          treeRect.top < carRect.bottom &&
+          !isJumping
+        ) {
+          gameOver();
+        }
+
+        if (treePosition < -30) {
+          clearInterval(treeInterval);
+          tree.remove();
+        }
+      }, 20);
+
+      // Keep generating trees
+      setTimeout(generateTree, Math.random() * 2000 + 1000);
+    }
+
+    function jump() {
+      if (isJumping) return;
+      isJumping = true;
+      let jumpHeight = 0;
+      const upInterval = setInterval(() => {
+        if (jumpHeight >= 100) {
+          clearInterval(upInterval);
+          const downInterval = setInterval(() => {
+            if (jumpHeight <= 0) {
+              clearInterval(downInterval);
+              isJumping = false;
+              score++;
+              scoreBoard.textContent = 'Score: ' + score;
+            } else {
+              jumpHeight -= 5;
+              car.style.bottom = 50 + jumpHeight + 'px';
+            }
+          }, 20);
+        } else {
+          jumpHeight += 5;
+          car.style.bottom = 50 + jumpHeight + 'px';
+        }
+      }, 20);
+    }
+
+    function gameOver() {
+      gameRunning = false;
+      alert('Game Over! Your Score: ' + score);
+      location.reload();
+    }
+
+    // Real-time Voice recognition — better interim partial matching
+    function listenVoice() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.continuous = true;
+      recognition.interimResults = true;
+
+      recognition.onresult = function(event) {
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const result = event.results[i];
+          const transcript = result[0].transcript.trim().toLowerCase();
+          console.log('Heard:', transcript);
+
+          if (transcript.includes('jum')) {
+            jump();
+          }
+        }
+      };
+
+      recognition.onerror = function(e) {
+        console.error('Recognition error:', e);
+        recognition.stop();
+        recognition.start();
+      };
+
+      recognition.onend = function() {
+        recognition.start();
+      };
+
+      recognition.start();
+    }
+  </script>
+</body>
+</html>
